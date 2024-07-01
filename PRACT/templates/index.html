@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width,  
+                   initial-scale=1.0"> 
+    <title>FNS</title>
+
+<link rel="stylesheet" href="../static/css/styl.css">
+</head>
+<body>
+  <div class="bg">
+    <header>
+  
+    <h1 style="font-size:55px; margin-left: 35%; font-family: courier;">Fake News Detector</h1>
+   </header>
+    <form action="/action_page.php" method="post">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p style="font-size: 60PX; font-family: courier; " class="title">FAKE</p>
+                <h1 style="font-size:40PX;font-family: monospace;">news detection</h1>
+            </div>
+            <div class="flip-card-back">
+                <p style="font-size: 60PX; font-family: courier;" class="title">FACT</p>
+                <h1 style="font-size:40PX; font-family: monospace;">analyzed</h1>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+      <div class="input-group">
+        <input for="title" required="" type="text" name="title" autocomplete="off" class="input">
+        <label class="user-label" >Title</label>
+        <br><br><br><br>
+      </div> 
+      <div class="input-group">
+        <input for="Author" required="" type="text" name="author" autocomplete="off" class="input">
+        <label class="user-label">Author</label>
+        <br><br><br><br>
+      </div>
+      <div class="input-group">
+        <textarea for="maintext" required="" type="text" name="maintext" autocomplete="off" class="input" rows="6" cols="60"></textarea>
+        <label class="user-label " >enter whole text</label>
+                <br><br><br><br><hr>
+        <br><br><br><br>
+            
+
+      </div>
+        <button style="font-size: 30px; font-family: 'Courier New';" type="submit">Predict</button>
+
+</form>
+
+  </div>
+
+
+</body>
+</html>
